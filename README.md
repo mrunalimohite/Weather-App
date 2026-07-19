@@ -74,5 +74,14 @@ Open your browser window and navigate to `http://localhost:5173` to see your run
 
 ---
 
+## 👨‍💻 Author
+
+Mrunali Mohite  
+Frontend Developer
+
+
+## ⭐ Show Your Support
+
+If you like this project, please ⭐ the repository!
 ## 📝 License
 This project is licensed under the MIT License - feel free to modify and build upon it as you like!

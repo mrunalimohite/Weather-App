@@ -4,7 +4,7 @@ A sleek, responsive, and dynamic weather web dashboard built with **React**, **V
 
 ## 🚀 Live Demo
 *(Optional: Add your deployed site link here once hosted on GitHub Pages or Vercel)*
-> **Live Link:** [View Live Site](https://github.io)
+> **Live Link:** [View Live Site](https://modern-weather-app-project.netlify.app/)
 
 ---
 

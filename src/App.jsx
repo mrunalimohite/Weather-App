@@ -10,7 +10,7 @@ const App = () => {
   //fetching weather details based on API URL
   const getWeatherDetails = async (cityOrQuery) => {
      try { 
-      const API_URL = `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${cityOrQuery}`; 
+      const API_URL = `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${cityOrQuery}`; 
       
       const response = await fetch(API_URL); 
       const data = await response.json(); 

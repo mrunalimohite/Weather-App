@@ -97,6 +97,11 @@ body{
  :where(h2, p){
   color: #fff;
 }
+.error-text{
+  color: #ff8a8a;
+  text-align: center;
+  padding: 10px 25px 0;
+}
 .current-weather{
   display: flex;
   flex-direction: column;
@@ -147,4 +152,75 @@ body{
   flex-direction: column;
   align-items: center;
   gap: 8px;
+}
+
+/* ---------- Responsive adjustments ---------- */
+
+/* Let the app fill narrow viewports instead of floating in the
+   centered flexbox with wasted side margins. */
+@media (max-width: 460px){
+  body{
+    padding: 0;
+    align-items: stretch;
+  }
+  .container{
+    max-width: 100%;
+    min-height: 100vh;
+    border-radius: 0;
+    margin: 0;
+  }
+}
+
+/* Tighten up spacing and type sizes for small phones */
+@media (max-width: 380px){
+  .search-section{
+    padding: 16px;
+    gap: 8px;
+  }
+  .search-section .search-form{
+    height: 48px;
+  }
+  .search-section .search-input{
+    font-size: 16px;
+    padding: 0 16px 0 42px;
+  }
+  .locationBtn{
+    height: 48px;
+    width: 48px;
+  }
+  .current-weather{
+    padding: 12px 0 32px;
+  }
+  .weatherIcon{
+    width: 90px;
+  }
+  .temperature{
+    font-size: 34px;
+    margin: 12px 0;
+  }
+  .temperature span{
+    font-size: 16px;
+  }
+  .description{
+    font-size: 17px;
+  }
+  .hourly-forecast{
+    padding: 12px 16px;
+  }
+  .hourly-forecast .weatherList{
+    gap: 16px;
+  }
+}
+
+/* Very small / older phones */
+@media (max-width: 320px){
+  .weatherIcon{
+    width: 76px;
+  }
+  .temperature{
+    font-size: 28px;
+  }
+  .search-section .search-input::placeholder{
+    font-size: 14px;
+  }
 }
